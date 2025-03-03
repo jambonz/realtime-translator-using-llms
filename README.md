@@ -25,6 +25,12 @@ LOWER_VOLUME=-10dB \
 node app.js
 ```
 
+## Configuring jambonz
+
+On your jambonz system, create an Application that uses a websocket URL with a path of "/llm-translator", as shown below.
+
+![alt text](image.png)
+
 ## How it works
 When an incoming call is routed to this application, it will generate a dialed call to the phone number in the 
 To header of the incoming call, by default.  If you want to override this to dial a different number you can 
