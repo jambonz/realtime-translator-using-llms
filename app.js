@@ -16,7 +16,8 @@ const makeService = createEndpoint({
     }
   ]});
 
-assert.ok(process.env.OPENAI_API_KEY, 'OPENAI_API_KEY is required');
+// eslint-disable-next-line max-len
+assert.ok(process.env.OPENAI_API_KEY || process.env.ULTRAVOX_API_KEY, 'OPENAI_API_KEY  or ULTRAVOX_API_KEY is required');
 assert.ok(process.env.CALLED_PARTY_LANGUAGE, 'CALLED_PARTY_LANGUAGE is required');
 assert.ok(process.env.CALLING_PARTY_LANGUAGE, 'CALLING_PARTY_LANGUAGE is required');
 
